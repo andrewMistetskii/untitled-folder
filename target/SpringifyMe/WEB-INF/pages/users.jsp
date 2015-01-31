@@ -16,9 +16,10 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
 
 
+
 </head>
 <body>
-<table class="table table-hover">
+<table class="table table-hover table-bordered">
     <thead>
         <tr>
             <th>ID</th>
@@ -32,7 +33,7 @@
                 <td>${user.name}</td>
                 <td>
                     <form method="post" action="/users/delete/${user.id}">
-                        <input class="btn-danger" type="submit" value="удалить?">
+                        <input class="btn btn-danger" type="submit" value="удалить?">
                     </form>
 
                 </td>
