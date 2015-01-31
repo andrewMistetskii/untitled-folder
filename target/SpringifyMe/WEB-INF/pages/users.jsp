@@ -13,12 +13,12 @@
 <head>
     <title></title>
 
-    <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
 
 
 </head>
 <body>
-<table class="padded">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>ID</th>
@@ -32,7 +32,7 @@
                 <td>${user.name}</td>
                 <td>
                     <form method="post" action="/users/delete/${user.id}">
-                        <input type="submit" value="удалить?">
+                        <input class="btn-danger" type="submit" value="удалить?">
                     </form>
 
                 </td>
@@ -41,11 +41,11 @@
         </c:forEach>
     </tbody>
 </table>
-<a href="/users/add">add new User</a>
+<a class="btn btn-primary" href="/users/add">add new User</a>
 
 <br>
 <br>
+<p class="bg-info">Количество пользователей: ${users.size()}</p>
 
-Количество пользователей: ${users.size()}
 </body>
 </html>
