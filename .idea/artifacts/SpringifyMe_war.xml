@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="SpringifyMe:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringifyMe.war">
+      <element id="artifact" artifact-name="SpringifyMe:war exploded" />
+    </root>
+  </artifact>
+</component>
